@@ -26,6 +26,7 @@ const gameBoard = (() => {
 
   const chooseDifficulty = (e => {
     if (e.target.classList.contains("human")) {
+      player2.name = "Player2";
       switchScreen();
     }
     else if(e.target.classList.contains("normal")){
