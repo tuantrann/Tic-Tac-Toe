@@ -52,7 +52,7 @@ const gameBoard = (() => {
     player2.turn = 0;
     player2.score = 0;
     botMove = [];
-    origBoard = ["1","2","3","4","5","6","7","8","9"];
+    origBoard = ["0","1","2","3","4","5","6","7","8"];
     let result = document.getElementsByClassName('result')[0];
     let gameContainer = document.getElementsByClassName('gameContainer')[0];
     let player1Score = document.getElementsByClassName('pScore')[0];
@@ -68,7 +68,7 @@ const gameBoard = (() => {
     player1.turn = 0;
     player2.turn = 0;
     botMove = [];
-    origBoard = ["1","2","3","4","5","6","7","8","9"];
+    origBoard = ["0","1","2","3","4","5","6","7","8"];
     let result = document.getElementsByClassName('result')[0];
     let gameContainer = document.getElementsByClassName('gameContainer')[0];
     result.classList.add('hideDisplay');
@@ -245,9 +245,9 @@ const gameBoard = (() => {
 
 
       // human
-      var huPlayer = "O";
+      var huPlayer = "X";
       // ai
-      var aiPlayer = "X";
+      var aiPlayer = "O";
 
       let oriBoard = origBoard.map(element => {
         if (element != "X" && element != "O"){
