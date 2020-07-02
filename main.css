@@ -1,0 +1,181 @@
+body{
+  font-family: sans-serif;
+  background-image: url("./Pics/background.jpg");
+  background-size: 100%;
+
+}
+
+/* Loading Screen */
+.loadingScreen{
+  display: grid;
+  grid-template-columns: 300px 300px 300px;
+  grid-gap: 50px;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+
+  font-family: 'Baloo Paaji 2', cursive;
+}
+.loadingScreenTitle{
+  text-align: center;
+}
+.card{
+  background-color: transparent;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.cardImage{
+  height: 160px;
+  width: 160px;
+  border-radius: 50%;
+  border: 5px solid #272133;
+  margin-top: 20px;
+  box-shadow: 0 10px 50px rgba(235, 25, 110, 1);
+  transition: "all 0.5s";
+  cursor: pointer;
+}
+.cardImage:hover{
+  box-shadow: 10px 50px 70px rgba(235, 250, 110, 100);
+  transform: scale(1.1);
+  cursor: pointer;
+  color: rgba(235, 250, 110, 100);
+}
+.cardInfo{
+  color: rgba(235, 25, 110, 1);
+}
+.cardImage:hover + .cardInfo{
+  color: rgba(235, 250, 110, 100);
+  transform: scale(1.1);
+
+}
+/* In-Game screen */
+.inGameScreen{
+
+}
+.topContainer{
+  display: block;
+  margin-block-start: 1rem;
+  margin-block-end: 1rem;
+  height: 10vh;
+  text-align: center;
+
+}
+.inGameTitle{
+  position: relative;
+  font-size: 200%;
+  color: #ed732d;
+  letter-spacing: 2px;
+  text-shadow: 3px 3px 1px rgb(255,255,255), 6px 6px 1px rgba(235, 250, 110, 100);
+}
+.playerScore{
+  position: absolute;
+  left: 5%;
+  top: 5%;
+  font-size: 150%;
+  color: #e2f04a;
+  border: solid 2px;
+  border-color: orange;
+  box-shadow: 5px 3px 1px #e3cb8a;
+}
+.challengerScore{
+  position: absolute;
+  right: 5%;
+  top: 5%;
+  font-size: 150%;
+  color: #e2f04a;
+  border: solid 2px;
+  border-color: orange;
+  box-shadow: 5px 3px 2px #e3cb8a;
+}
+.pScore{
+  text-align: center;
+}
+.cScore{
+  text-align: center;
+}
+.hideDisplay{
+  display: none;
+}
+.gameContainer{
+  height: 60vh;
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-template-rows: repeat(3, 100px);
+  justify-content: center;
+  margin-top: 100px;
+
+}
+.gameSquare{
+  border: solid 2px #e8a238;
+  text-align: center;
+
+}
+.gameSquare:hover{
+  opacity: 50%;
+  cursor:pointer;
+  background-color: #f2d19d;
+}
+.bottomContainer{
+  display: block;
+  text-align: center;
+}
+.blur{
+  opacity: 10%;
+}
+.result{
+  font-size: 150%;
+  position: absolute;
+  top: 55%;
+  left: 45%;
+  margin-top: -50px;
+  margin-left: -50px;
+  width: 300px;
+  height: 100px;
+
+}
+.resultText{
+  animation: 10000ms ease-in-out infinite color-change;
+}
+@keyframes color-change {
+  0% {
+    color: teal;
+  }
+  20% {
+    color: gold;
+  }
+  40% {
+    color: indianred;
+  }
+  60% {
+    color: violet;
+  }
+  80% {
+    color: green;
+  }
+  100% {
+    color: teal;
+  }
+}
+button{
+  width: 100px;
+  height: 20px;
+  cursor:pointer;
+  background-color: yellow;
+  border-radius: 10%;
+  animation-duration: "all 0.2s";
+  border: solid 1px;
+  color: purple;
+  font-size: 80%;
+  font-weight: bold;
+}
+button:hover{
+  background-color: #faf7c3;
+  transform: scale(1.1);
+
+}
+.X{
+  font-size: 500%;
+  color: #db761d;
+}

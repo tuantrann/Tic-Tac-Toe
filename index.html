@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>TicTacToe</title>
+    <link rel="stylesheet" href="main.css">
+  </head>
+  <body>
+
+    <main>
+      <header>
+
+      </header>
+      <div class="loadingScreen">
+        <div class="card">
+          <img src="./Pics/friends.png" class="cardImage human click" alt="human picture">
+          <div class="cardInfo">
+            <h2>Versus Friend</h2>
+          </div>
+        </div>
+        <div class="card ">
+          <img src="./Pics/robot.png" class="cardImage  normal click" alt="robot picture">
+          <div class="cardInfo">
+            <h2>Versus Normal Bot</h2>
+          </div>
+        </div>
+        <div class="card ">
+          <img src="./Pics/SmartRobot.jpg" class="cardImage extreme click" alt="robot picture">
+          <div class="cardInfo">
+            <h2>Versus Terminator</h2>
+          </div>
+        </div>
+      </div>
+
+      <div class="inGameScreen hideDisplay">
+        <div class="topContainer">
+          <div class="playerScore">
+            <div class="player1Symbol">
+              <span class="playerSymbol">PLAYER 1</span>
+            </div>
+            <div class="player1Score">
+              <p>Score: <span class="pScore">0</span></p>
+            </div>
+
+          </div>
+          <div class="inGameTitle">
+            <h1>TIC TAC TOE</h1>
+          </div>
+          <div class="challengerScore">
+            <div class="player2Symbol">
+              <span class="playerSymbol">PLAYER 2</span>
+            </div>
+            <div class="player2Score">
+              <p>Score: <span class="cScore">0</span></p>
+            </div>
+          </div>
+        </div>
+        <div class="gameContainer X">
+          <div class="gameSquare clicks 0">
+
+          </div>
+          <div class="gameSquare clicks 1">
+
+          </div>
+          <div class="gameSquare clicks 2">
+
+          </div>
+          <div class="gameSquare clicks 3">
+
+          </div>
+          <div class="gameSquare clicks 4">
+
+          </div>
+          <div class="gameSquare clicks 5">
+
+          </div>
+          <div class="gameSquare clicks 6">
+
+          </div>
+          <div class="gameSquare clicks 7">
+
+          </div>
+          <div class="gameSquare clicks 8">
+
+          </div>
+
+
+        </div>
+        <div class="result hideDisplay">
+          <h1 class="resultText"></h1>
+        </div>
+        <div class="bottomContainer">
+          <button class="restart clicks" type="button" name="button">RESTART</button>
+          <button class="home clicks" type="button" name="button">HOME</button>
+        </div>
+      </div>
+    </main>
+    <script src="main.js">
+
+    </script>
+  </body>
+</html>
